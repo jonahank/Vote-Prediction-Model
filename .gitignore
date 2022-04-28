@@ -5,6 +5,7 @@ tmp_trainer
 *.dataset
 ft_meetings_2012-2021.pkl
 ft_meetings_2012-2021_clean.pkl
+models_binary_party
 *.pkl
 *.csv
 *.pyc
