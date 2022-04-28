@@ -1,3 +1,20 @@
+### PROJECT SPECIFIC
+mlruns
+test-trainer
+tmp_trainer
+*.dataset
+ft_meetings_2012-2021.pkl
+ft_meetings_2012-2021_clean.pkl
+*.pkl
+*.csv
+*.pyc
+*.html
+*.xlsx
+*.pyc
+*.zip
+### PROJECT SPECIFIC
+
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
