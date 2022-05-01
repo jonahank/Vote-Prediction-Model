@@ -58,14 +58,14 @@ def transform_description(df, party, path_to_models, num_labels=2, verbose=False
         for input in weight_pred:
             input2 = torch.from_numpy(input)
             (i,k) = m(input2) #i=against, k=for
-            weight_for.append(k.item())
-            weight_against.append(i.item())
+            weight_for.append(i.item())
+            weight_against.append(k.item())
     elif num_labels == 3:
         for input in weight_pred:
             input2 = torch.from_numpy(input)
             (i,j,k) = m(input2) #i=against, j=neutral, k=for
-            weight_for.append(k.item())
-            weight_against.append(i.item())
+            weight_for.append(i.item())
+            weight_against.append(k.item())
 
     df[f"{party}_weight_for"] = weight_for
     df[f"{party}_weight_against"] = weight_against
