@@ -53,7 +53,7 @@ def load_speaker_fix_dict(py27 = False):
                        'Uddannelses- og forskningsministeren':'', 'Ministeren for sundhed og forebyggelse':'','og kirke':'',
                        'Erhvervs- og vækstministeren':'', 'Undervisningsministeren':'', 'Udenrigsministeren':'',
                        'Den fg. formand':'', 'Forsvarsministeren':'', 'Fjerde næstformand':'', 'Formanden':'',
-                       'Handels- og udviklingsministeren': '', 'Transportministeren':'','Udviklingsministeren':'',
+                       'Handels- og udviklingsministeren': '', 'Handels- og investeringsministeren':'', 'Transportministeren':'','Udviklingsministeren':'',
                        'Aldersformanden (Bertel Haarder)':'','Aldersformanden':'','Ministeren for ligestilling og kirke':'',
                        'Ministeren for børn, ligestilling, integration og sociale forhold':'','Kulturministeren':'',
                        'Ministeren for by, bolig og landdistrikter':'', 'Ministeren for nordisk samarbejde':'',
@@ -68,11 +68,12 @@ def load_speaker_fix_dict(py27 = False):
                        'Transport-, bygnings- og boligministeren':'','Udlændinge- og integrationsministeren':'',
                        'Ministeren for ligestilling':'','Ministeren for udviklingssamarbejde':'',
                        'Ministeren for fiskeri og ligestilling':'','Social-, børne- og integrationsministeren':'',
-                       'Ministeren for forskning, innovation og videregående uddannelser':'',
+                       'Ministeren for forskning, innovation og videregående uddannelser':'', 'Ministeren for udviklingsbistand' :'',
                        'Handels- og europaministeren':'','Ministeren for fødevarer, fiskeri og ligestilling':'',
                        'Boligministeren':'','Børne- og undervisningsministeren':'',
                         'Klima-, energi- og forsyningsministeren':'','Ministeren for fødevarer, landbrug og fiskeri':'',
                         'Beskæftigelsesminister og minister for ligestilling':'',
+                        'Social- og integrationsministeren': '', 'Europaministeren': '', 'Indenrigs- og boligministeren':'',
 
                     # also fix other strange things in data
                        '(Bertel Haarder) Bertel Haarder': 'Bertel Haarder (V)',
@@ -89,7 +90,11 @@ def load_speaker_fix_dict(py27 = False):
                        'Rasmus Helveg Petersen Rasmus Helveg Petersen':'Rasmus Helveg Petersen (RV)',
                        'Benny Engelbrecht Benny Engelbrecht':'Benny Engelbrecht','Rasmus Prehn Rasmus Prehn':'Rasmus Prehn',
                        'Mette Frederiksen Mette Frederiksen':'Mette Frederiksen','Mogens Jensen Mogens Jensen':'Mogens Jensen',
-                       'Morten Bødskov Morten Bødskov':'Morten Bødskov'}
+                       'Morten Bødskov Morten Bødskov':'Morten Bødskov', 'Margrethe Vestager Margrethe Vestager': 'Margrethe Vestager',
+                       'Astrid Krag Astrid Krag':'Astrid Krag', 'Ane Halsboe-Jørgensen Ane Halsboe-Jørgensen': 'Ane Halsboe-Jørgensen',
+                       'Dan Jørgensen Dan Jørgensen':'Dan Jørgensen', 'Flemming Møller Mortensen Flemming Møller Mortensen':'Flemming Møller Mortensen',
+                       'Simon Kollerup Simon Kollerup':'Simon Kollerup', 'Mattias Tesfaye Mattias Tesfaye': 'Mattias Tesfaye',
+                       '(Henrik Dam Kristensen) Henrik Dam Kristensen':'Henrik Dam Kristensen'}
 
     rep = dict((re.escape(k), v) for k, v in replace_dict.items())
     pattern = re.compile("|".join(rep.keys()))
@@ -135,7 +140,9 @@ def load_fix_party_affiliations():
                'Inger Støjberg':'(V)',
                'Jakob Ellemann-Jensen':'(V)',
                'Jens Rohde': '(RV)',
+               'Jeppe Bruus': '(S)',
                'Jeppe Kofod':'(S)',
+               'Jesper Petersen': '(S)',
                'John Dyrby Paulsen':'(S)',
                'Jonas Dahl':'(SF)',
                'Joy Mogensen':'(S)',
@@ -164,12 +171,14 @@ def load_fix_party_affiliations():
                'Merete Riisager':'(LA)',
                'Mette Bock':'(LA)',
                'Mette Frederiksen':'(S)',
+               'Mette Gjerskov' : '(S)',
                'Mogens Jensen':'(S)',
                'Mogens Lykketoft':'(S)',
                'Morten Bødskov':'(S)',
                'Morten Østergaard':'(RV)',
                'Nick Hækkerup':'(S)',
                'Nicolai Wammen':'(S)',
+               'Ole Sohn' : '(SF)',
                'Ole Birk Olesen':'(LA)',
                'Per Clausen':'(EL)',
                'Pernille Rosenkrantz-Theil':'(S)',
@@ -190,12 +199,15 @@ def load_fix_party_affiliations():
                'Stine Brix':'(EL)',
                'Søren Pape Poulsen':'(KF)',
                'Søren Pind':'(V)',
+               'Thor Möger Pedersen' : '(SF)',
                'Thyra Frank':'(LA)',
                'Tommy Ahlers':'(V)',
                'Trine Bramsen':'(S)',
                'Trine Torp': '(SF)',
                'Troels Lund Poulsen':'(V)',
-               'Ulla Tørnæs':'(V)'
+               'Uffe Elbæk': '(ALT)',
+               'Ulla Tørnæs':'(V)',
+               'Villy Søvndal' : '(SF)'
               }
     return fix_aff
 
