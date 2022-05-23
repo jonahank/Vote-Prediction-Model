@@ -13,6 +13,7 @@ models_binary_party
 *.xlsx
 *.pyc
 *.zip
+*.pdf
 ### PROJECT SPECIFIC
 
 
