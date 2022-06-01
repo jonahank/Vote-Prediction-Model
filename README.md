@@ -36,9 +36,9 @@ https://www.certainly.io/blog/danish-bert-model/.
 
 Danish Word2Vec:
 Sørensen, N. H. (2020). Word2vec model.
-korpus.dsl.dk/resources/licences/dslopen.html
+//korpus.dsl.dk/resources/licences/dslopen.html
 
 ## Acknowledgements
-The majority of this work is build using the Python libraries by Hugging Face [https://huggingface.co/] and build upon the work of the team behind the DaBERT-model[https://www.certainly.io/blog/norwegian-bert-model/]!
+The majority of this work is build using the Python libraries by [Hugging Face](https://huggingface.co/) and build upon the work of the team behind the [DaBERT-model](https://www.certainly.io/blog/norwegian-bert-model/)!
 
-The resources are created through the work of my Master's thesis, so I would like to thank my supervisors Leon Derczynski[https://www.derczynski.com/itu/] and Vedran Sekara[https://vedransekara.github.io/] for the great support throughout the project! And a HUGE thanks to Gustav Gyrst[https://github.com/Gyrst] for great sparring and co-development of the tools you find in this repo. 
+The resources are created through the work of my Master's thesis, so I would like to thank my supervisors [Leon Derczynski](https://www.derczynski.com/itu/) and [Vedran Sekara](https://vedransekara.github.io/) for the great support throughout the project! And a HUGE thanks to [Gustav Gyrst](https://github.com/Gyrst) for great sparring and co-development of the tools you find in this repo. 
