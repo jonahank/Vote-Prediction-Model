@@ -10,6 +10,7 @@ Please see this repository for:
 + the fine-tuning flow using the pre-trained DaBERT-model
 + scoring the two unlabelled datasets to create FT-Meetings and FT-Votes
 
+The model can be accessed through Hugging Face Hub [here](https://huggingface.co/jonahank/KlimaBERT)
 
 
 ### Two annotated datasets
